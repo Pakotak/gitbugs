@@ -66,3 +66,6 @@
   --color-scheme-2-foreground: var(--color-coffee);
   --color-error-red: #7f1c1c;
 }
+body {
+  background-color: var(--color-coffee-lighter);
+}
