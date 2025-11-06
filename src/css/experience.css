@@ -13,10 +13,14 @@
     padding: 64px 32px;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .container-section {
+    max-width: 1440px;
+    padding: 64px;
+  }
+}
 .section-title {
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .title {
@@ -29,8 +33,14 @@
   text-align: center;
   color: #0b0803;
 }
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 48px;
+  }
+}
 
 .subtitle-section {
+  margin-bottom: 32px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -51,6 +61,10 @@
     gap: 32px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .foto-list {
+  }
+}
 
 .foto-item {
   position: relative;
@@ -67,8 +81,12 @@
   .foto-fix {
     width: 100%;
     height: 100%;
-    /* min-width: 704px; */
     object-fit: cover;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .foto-item {
+    width: calc((100% - 64px) / 3);
   }
 }
 
