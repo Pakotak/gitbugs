@@ -1,45 +1,9 @@
-<<<<<<< HEAD
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  a {
-    text-decoration: none;
-  }
-
-  .header-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 72px;
-  }
-
-  .iconLogo {
-    width: 84px;
-    height: 36px;
-  }
-
-  .iconBurger {
-    width: 24px;
-    height: 24px;
-  }
-
-  .header-menu-btn {
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-    padding: 0;
-  }
-
-  .navigation-links {
-    display: none;
-  }
-=======
 /* MOBILE first */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 72px;
->>>>>>> 711c377 (header)
 }
 
 /* Logo */
