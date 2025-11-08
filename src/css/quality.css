@@ -36,7 +36,6 @@
   line-height: 1.5;
   color: #0b0803;
   margin-bottom: 32px;
-  max-width: 650px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
@@ -83,10 +82,7 @@
 
   .section-headline {
     font-size: 36px;
-  }
-
-  .section-description {
-    margin-bottom: 60px;
+    max-width: 462px;
   }
 
   .advantages-list {
@@ -115,7 +111,9 @@
 
   .advantages-list-item:nth-child(3) .section-list-headline,
   .advantages-list-item:nth-child(3) .list-paragraph {
-    max-width: 704px;
+    max-width: 440px;
+    margin-top: 8px;
+    margin-bottom: 0;
     padding: 0;
   }
 
