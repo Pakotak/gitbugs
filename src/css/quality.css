@@ -39,10 +39,13 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: #0b0803;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1440px) {
   .section-headline {
     font-size: 48px;
+    max-width: 768px;
   }
 }
 .section-description {
