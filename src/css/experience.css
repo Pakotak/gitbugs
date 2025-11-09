@@ -1,7 +1,6 @@
 .container-section {
-  margin: 0;
   padding: 64px 16px;
-  min-width: 320px;
+  max-width: 375px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -16,9 +15,6 @@
     max-height: 1217px;
     padding: 64px;
   }
-}
-.section-title {
-  text-align: center;
 }
 
 .title {
@@ -52,7 +48,6 @@
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
-  /* margin: 24px; */
 }
 @media screen and (min-width: 768px) {
   .foto-list {
