@@ -8,12 +8,15 @@
     <!-- all Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap"
+      as="style"
     />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <!-- Normalize -->
@@ -25,20 +28,20 @@
 
     <title>CoffeeJoy</title>
     <script type="module" crossorigin src="/gitbugs/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/gitbugs/assets/index-DfYRjnt4.css">
+    <link rel="stylesheet" crossorigin href="/gitbugs/assets/index-DwYB7nNe.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
-    <a href="#" class="header-logo">
-      <svg class="header-logo-icon" width="84" height="36">
-        <use href="/gitbugs/assets/sprite-DRk1a6BL.svg#header-logo-icon"></use>
+    <a href="./index.html" class="header-logo">
+      <svg class="header-logo-icon logo" width="84" height="36">
+        <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#header-logo-icon"></use>
       </svg>
     </a>
 
     <button class="header-menu-btn" type="button">
       <svg class="header-burger-icon" width="24" height="24">
-        <use href="/gitbugs/assets/sprite-DRk1a6BL.svg#burger-icon"></use>
+        <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#burger-icon"></use>
       </svg>
     </button>
 
@@ -56,25 +59,24 @@
 
 
     <main>
-      <section class="hero">
+      <section class="hero container" id="about_us">
+  <div class="hero-content">
+    <h1 class="hero-title">Savor the Essence of Specialty Coffee</h1>
+    <p class="hero-text">
+      At CoffeeJoy, we believe every cup tells a story. Join us in exploring the
+      rich flavors and aromas of our carefully curated coffee selections.
+    </p>
+    <button type="button" class="hero-button btn">
+      <a href="#quality" class="hero-button-link">Learn More</a>
+    </button>
 
-    <div class="hero-content">
-        <h1 class="hero-title">Savor the Essence of Specialty Coffee</h1>
-        <p class="hero-text">At CoffeeJoy, we believe every cup tells a story. Join us in exploring the rich flavors and
-            aromas of our carefully
-            curated coffee selections.</p>
-        <button type="button" class="hero-button">
-            <a href="#quality" class="hero-button-link">Learn More</a>
-        </button>
-
-        <!-- Секція "Quuality" має містити id="quality" -->
-
-    </div>
-
+    <!-- Секція "Quuality" має містити id="quality" -->
+  </div>
 </section>
+
       <!---Welcome-->
-<section class="section-welcome">
-  <div class="container">
+<section class="section-welcome" id="benefits">
+  <div class="welcome-container container">
     <!-- ряд з текстом -->
     <div class="welcome-row">
       <div class="welcome-col-left">
@@ -90,10 +92,10 @@
           roasting them to perfection, ensuring each sip is a delight.
         </p>
 
-        <button class="btn-find-location" type="button">
-          <span>Find location</span>
-          <svg class="btn-welcome-icon" width="24" height="24">
-            <use href="/gitbugs/assets/icons-0SuicKOJ.svg#icon-map-pin"></use>
+        <button class="btn-find-location btn" type="button">
+          <a href="#location" class="button-link">Find location</a>
+          <svg class="btn-welcome-icon btn-icon" width="24" height="24">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#icon-map-pin"></use>
           </svg>
         </button>
       </div>
@@ -103,20 +105,21 @@
     <div class="welcome-image">
       <picture>
         <source
+          media="(min-width:1440px)"
+          srcset="/gitbugs/assets/welcome_desk_1x-De7LKPJG.jpg 1x, /gitbugs/assets/welcome_desk@2x-2-Bsqlv9IK.jpg 2x"
+        />
+        <source
           media="(max-width:767px)"
-          srcset="/gitbugs/assets/welcome_mob_1x-D0MHIZTr.jpg 1x, /gitbugs/assets/welcome_mob@2x-2-DOEZSWId.jpg 2x"
+          srcset="/gitbugs/assets/welcome_mob_1x-BQvS82Qr.jpg 1x, /gitbugs/assets/welcome_mob@2x-2-WYs6T0di.jpg 2x"
         />
         <source
           media="(min-width: 768px)"
-          srcset="/gitbugs/assets/welcome_tab_1x-F5f82yZh.jpg 1x, /gitbugs/assets/welcome_tab@2x-2-BjJ8UFWd.jpg 2x"
+          srcset="/gitbugs/assets/welcome_tab_1x-choQZ_l_.jpg 1x, /gitbugs/assets/welcome_tab@2x-2-rCp0C2xK.jpg 2x"
         />
-        <source
-          media="(min-width:1440px)"
-          srcset="/gitbugs/assets/welcome_desk_1x-JYLWRPdU.jpg 1x, /gitbugs/assets/welcome_desk@2x-2-DNAR3_ea.jpg 2x"
-        />
+
         <img
-          class="welcome-image"
-          src="/gitbugs/assets/welcome_mob_1x-D0MHIZTr.jpg"
+          class="welcome-img"
+          src="/gitbugs/assets/welcome_mob_1x-BQvS82Qr.jpg"
           alt="Barista pouring coffee"
           width="288"
           height="162"
@@ -127,7 +130,7 @@
   </div>
 </section>
 
-      <section class="stands-out-section">
+      <section class="stands-out-section" id="quality">
   <div class="container">
     <span class="quality-badge">Quality</span>
 
@@ -244,7 +247,7 @@
 
       <!--#region experience-->
 
-<section class="section-foto">
+<section class="section-foto" id="gallery">
   <div class="container container-section">
     <div class="section-title">
       <h2 class="title">Coffee Moments</h2>
@@ -258,18 +261,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/latte-CxBdJuPL.jpg 1x, /gitbugs/assets/latte-desc@2x-BhBYKweo.jpg 2x"
+            srcset="/gitbugs/assets/latte-hZ5S5VPm.jpg 1x, /gitbugs/assets/latte-desc@2x-Upi1OVEr.jpg 2x"
           />
           <source
             media="(max-width: 768px)"
-            srcset="/gitbugs/assets/latte-tab@1x-DxWye3Fx.jpg 1x, /gitbugs/assets/latte-tab@2x-BxbRu3py.jpg 2x"
+            srcset="/gitbugs/assets/latte-tab@1x-BknWK3lV.jpg 1x, /gitbugs/assets/latte-tab@2x-BJvSn_65.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/latte-mob@1x-Nxck7c_w.jpg 1x, /gitbugs/assets/latte-mob@2x-CrQB4p7H.jpg 2x"
+            srcset="/gitbugs/assets/latte-mob@1x-D3LLOzAI.jpg 1x, /gitbugs/assets/latte-mob@2x-qisDQY7w.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/latte-CxBdJuPL.jpg"
+            src="/gitbugs/assets/latte-hZ5S5VPm.jpg"
             alt="A close-up of a ceramic cup with a latte and delicate leaf-shaped foam art, placed on a rustic wooden table."
             class="foto-image"
             min-width="288"
@@ -282,18 +285,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/breakfast-By406_So.jpg 1x, /gitbugs/assets/breakfast-desc@2x-BAXTGkq8.jpg 2x"
+            srcset="/gitbugs/assets/breakfast-C0py6eV3.jpg 1x, /gitbugs/assets/breakfast-desc@2x-2pSOhBtE.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/gitbugs/assets/breakfast-tab@1x-B8ZjcP3I.jpg 1x, /gitbugs/assets/breakfast-tab@2x-D3TSjSnx.jpg 2x"
+            srcset="/gitbugs/assets/breakfast-tab@1x-K0RbPdrJ.jpg 1x, /gitbugs/assets/breakfast-tab@2x-CgN_1p8a.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/breakfast-mob@1x-DO7DL8dL.jpg 1x, /gitbugs/assets/breakfast-mob@2x-DXcKAgn9.jpg 2x"
+            srcset="/gitbugs/assets/breakfast-mob@1x-DDuCorCo.jpg 1x, /gitbugs/assets/breakfast-mob@2x-AtvvriB4.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/breakfast-By406_So.jpg"
+            src="/gitbugs/assets/breakfast-C0py6eV3.jpg"
             alt="A breakfast scene with a filter coffee in a glass server, a small ceramic mug, and a plate with a croissant and butter."
             class="foto-image"
             min-width="288"
@@ -306,18 +309,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/book-jvFCCeIQ.jpg 1x, /gitbugs/assets/book-desc@2x-DXxw-nHG.jpg 2x"
+            srcset="/gitbugs/assets/book-V7XsAfoh.jpg 1x, /gitbugs/assets/book-desc@2x-zd0nbVmw.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/gitbugs/assets/book-tab@1x-DPXqC9ip.jpg 1x, /gitbugs/assets/book-tab@2x-CuZlTUmO.jpg 2x"
+            srcset="/gitbugs/assets/book-tab@1x-D2FEUmeb.jpg 1x, /gitbugs/assets/book-tab@2x-DCvlqGGZ.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/book-mob@1x-Ch-oDzpj.jpg 1x, /gitbugs/assets/book-mob@2x-m8zWFdgL.jpg 2x"
+            srcset="/gitbugs/assets/book-mob@1x-B7e-HZdj.jpg 1x, /gitbugs/assets/book-mob@2x-DFPvmpzi.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/book-jvFCCeIQ.jpg"
+            src="/gitbugs/assets/book-V7XsAfoh.jpg"
             alt="A quiet café corner with a beige armchair and a small round wooden table. "
             class="foto-image"
             min-width="288"
@@ -330,18 +333,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/barista-BVC264kJ.jpg 1x, /gitbugs/assets/barista-desc@2x-CxV4-7LQ.jpg 2x"
+            srcset="/gitbugs/assets/barista-B6UE6npx.jpg 1x, /gitbugs/assets/barista-desc@2x-BTwezlo3.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/gitbugs/assets/barista-tab@1x-DjXq3qxR.jpg 1x, /gitbugs/assets/barista-tab@2x-F90KxHum.jpg 2x"
+            srcset="/gitbugs/assets/barista-tab@1x-KRNUAaRP.jpg 1x, /gitbugs/assets/barista-tab@2x-Ces7Be5I.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/barista-mob@1x-C7yyKpQu.jpg 1x, /gitbugs/assets/barista-mob@2x-V3lAK6Mq.jpg 2x"
+            srcset="/gitbugs/assets/barista-mob@1x-F1t33vMN.jpg 1x, /gitbugs/assets/barista-mob@2x-DQsm3-I6.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/barista-BVC264kJ.jpg"
+            src="/gitbugs/assets/barista-B6UE6npx.jpg"
             alt="Hands of a barista gently pouring a rich espresso shot into a ceramic cup. The café background is softly blurred, with visible coffee tools like a tamper and milk pitcher."
             class="foto-image"
             min-width="288"
@@ -353,18 +356,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/coffeeJoy-interior-BvP1VF6m.jpg 1x, /gitbugs/assets/coffeeJoy-interior-desc@2x-5E0yMWNM.jpg 2x"
+            srcset="/gitbugs/assets/coffeeJoy-interior-Dfe0H4P0.jpg 1x, /gitbugs/assets/coffeeJoy-interior-desc@2x-A43--yAU.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="../img/experience-img/tablet/coffeeJoy-interior-tab@1x.jpg 1x, ../img/experience-img/tablet/coffeeJoy-interior-tab@2x.jpg 2x"
+            srcset="/gitbugs/assets/coffeeJoy-interior-tab@1x-B-Ww8udW.jpg 1x, /gitbugs/assets/coffeeJoy-interior-tab@2x-BXvf2jmx.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/coffeeJoy-interior-mob@1x-X-PNpDoB.jpg 1x, /gitbugs/assets/coffeeJoy-interior-mob@2x-CzdjAX0G.jpg 2x"
+            srcset="/gitbugs/assets/coffeeJoy-interior-mob@1x-BDEdwUh8.jpg 1x, /gitbugs/assets/coffeeJoy-interior-mob@2x-DmXw7ek8.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/coffeeJoy-interior-BvP1VF6m.jpg"
+            src="/gitbugs/assets/coffeeJoy-interior-Dfe0H4P0.jpg"
             alt="A wide view of the CoffeeJoy interior — wooden furniture, soft cushions, warm pendant lights, and green plants on shelves. "
             class="foto-image"
             min-width="288"
@@ -377,18 +380,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/two-coffee-CU7fmc-1.jpg 1x, /gitbugs/assets/two-coffee-desc@2x-Ds8WBSje.jpg 2x"
+            srcset="/gitbugs/assets/two-coffee-CcRn82Sw.jpg 1x, /gitbugs/assets/two-coffee-desc@2x-B9Hn4mkL.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/gitbugs/assets/two-coffee-tab@1x-DZJHngFQ.jpg 1x, /gitbugs/assets/two-coffee-tab@2x-CFz1mEz6.jpg 2x"
+            srcset="/gitbugs/assets/two-coffee-tab@1x-CFbNzHiD.jpg 1x, /gitbugs/assets/two-coffee-tab@2x-3vfBKlUx.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/two-coffee-mob@1x-lyhL_7aq.jpg 1x, /gitbugs/assets/two-coffee-mob@2x-DdS6xhAW.jpg 2x"
+            srcset="/gitbugs/assets/two-coffee-mob@1x-BdHFbLlr.jpg 1x, /gitbugs/assets/two-coffee-mob@2x-D8jzvCTM.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/two-coffee-CU7fmc-1.jpg"
+            src="/gitbugs/assets/two-coffee-CcRn82Sw.jpg"
             alt="Two coffee cups on a small round table outdoors, surrounded by potted plants and greenery. "
             class="foto-image"
             min-width="288"
@@ -400,18 +403,18 @@
         <picture>
           <source
             media="(min-width: 1440px)"
-            srcset="/gitbugs/assets/coffee-kraft-desc@1x-Bir4P_ZN.jpg 1x, /gitbugs/assets/coffee-kraft-desc@2x-BGx6cTCj.jpg 2x"
+            srcset="/gitbugs/assets/coffee-kraft-desc@1x-BWX-eBW2.jpg 1x, /gitbugs/assets/coffee-kraft-desc@2x-CGRbRaIa.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/gitbugs/assets/coffee-kraft-BqDptWPg.jpg 1x, /gitbugs/assets/coffee-kraft-tab@2x-BaOAGiWB.jpg 2x"
+            srcset="/gitbugs/assets/coffee-kraft-CHbyli4F.jpg 1x, /gitbugs/assets/coffee-kraft-tab@2x-CdzL_DLJ.jpg 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/gitbugs/assets/coffee-kraft-mob@1x-BKBhcA4j.jpg 1x, /gitbugs/assets/coffee-kraft-mob@2x-Bm4rwBCU.jpg 2x"
+            srcset="/gitbugs/assets/coffee-kraft-mob@1x-BoBILt49.jpg 1x, /gitbugs/assets/coffee-kraft-mob@2x-ovhYKwQg.jpg 2x"
           />
           <img
-            src="/gitbugs/assets/coffee-kraft-BqDptWPg.jpg"
+            src="/gitbugs/assets/coffee-kraft-CHbyli4F.jpg"
             alt="A takeaway coffee cup with a kraft sleeve and CoffeeJoy branding placed on a wooden bench in a park."
             class="foto-image"
             min-width="288"
@@ -426,16 +429,16 @@
 <!--#endregion  experience-->
 
       <section class="subscribe-section">
-  <div class="container desk-wrapper">
+  <div class="desk-wrapper container">
     <div class="subscribe-desk-wrapper">
       <h2 class="subscribe-title">Join Our Coffee Community</h2>
       <p class="subscribe-text">
         Experience the joy of coffee delivered right to your door. Sign up
         today!
       </p>
-      <form class="subscribe-form">
+      <form class="subscribe-form" id="">
         <div class="subscribe-wrapper">
-          <label>
+          <label class="user-input">
             <input
               class="subscribe-input"
               type="email"
@@ -445,10 +448,10 @@
               required
             />
           </label>
-          <button class="subscribe-btn" type="submit">
+          <button class="subscribe-btn btn" type="submit">
             Subscribe
-            <svg class="subscribtion-icon" width="13" height="12">
-              <use href="/gitbugs/assets/icons-D-zRsAFh.svg#subscribe-icon"></use>
+            <svg class="subscribtion-icon" width="24" height="24">
+              <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#subscribe-icon"></use>
             </svg>
           </button>
         </div>
@@ -460,47 +463,58 @@
     <picture class="subscribe-img">
       <source
         media="(min-width: 1440px)"
-        srcset="/gitbugs/assets/subscribe-desk-min-B5nGyZf6.jpg 1x, /gitbugs/assets/subscribe-desk@2x-min-Ckhd0x3O.jpg 2x"
+        srcset="/gitbugs/assets/subscribe-desk-min-CSDVY2q0.jpg 1x, /gitbugs/assets/subscribe-desk@2x-min-VZHLrWcm.jpg 2x"
       />
       <source
         media="(min-width: 768px)"
-        srcset="/gitbugs/assets/subscribe-tab-min-CNfZaDVM.jpg 1x, /gitbugs/assets/subscribe-tab@2x-min-DCPtArmj.jpg 2x"
+        srcset="/gitbugs/assets/subscribe-tab-min-BqFDCoWs.jpg 1x, /gitbugs/assets/subscribe-tab@2x-min-mYZSUSvm.jpg 2x"
       />
       <source
         media="(max-width: 767px)"
-        srcset="/gitbugs/assets/subscribe-mob-min-C6fYxR7U.jpg 1x, /gitbugs/assets/subscribe-mob@2x-min-08haMyUf.jpg 2x"
+        srcset="/gitbugs/assets/subscribe-mob-min-cxULQShu.jpg 1x, /gitbugs/assets/subscribe-mob@2x-min-BuOTnihS.jpg 2x"
       />
       <img
         class="subscribe-img"
-        src="/gitbugs/assets/subscribe-desk-min-B5nGyZf6.jpg"
+        src="/gitbugs/assets/subscribe-desk-min-CSDVY2q0.jpg"
         alt="Subscribe"
       />
     </picture>
   </div>
 </section>
 
-      <section class="testimonials">
+      <section class="testimonials" id="testimonial">
   <div class="container">
     <h2 class="testimonials-title">What our visitors say</h2>
     <ul class="testimonials-list">
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li>
+            <svg class="star" width="20" height="19">
+              <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="star" width="20" height="19">
+              <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="star" width="20" height="19">
+              <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="star" width="20" height="19">
+              <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+            </svg>
+          </li>
+        
+          <li>
+            <svg class="star-empty" width="20" height="19">
+              <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
+            </svg>
+          </li>
+        </ul>
         <p class="quote">
           "Every cup feels like a warm hug! I'm addicted to their seasonal
           flavors!"
@@ -508,23 +522,23 @@
         <p class="visitor-name">Name Surname</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star-empty" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
+          </svg></li>
+        </ul>
         <p class="quote">
           "CoffeeJoy is my go-to place for a perfect cup of coffee! The ambiance
           is so inviting, and the baristas are always friendly."
@@ -532,23 +546,24 @@
         <p class="visitor-name">Alice Johnson</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+        
+        </ul>
         <p class="quote">
           "I love the variety of blends offered at CoffeeJoy. Every visit feels
           like a new experience!"
@@ -556,23 +571,23 @@
         <p class="visitor-name">Michael Smith</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star-empty" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
+          </svg></li>
+        </ul>
         <p class="quote">
           "The pastries are to die for! I can't resist pairing them with my
           favorite latte. Highly recommend this spot!"
@@ -580,23 +595,24 @@
         <p class="visitor-name">Emily Davis</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          
+        </ul>
         <p class="quote">
           "A cozy little gem! CoffeeJoy has the best cold brew in town. I come
           here every weekend!"
@@ -604,23 +620,23 @@
         <p class="visitor-name">James Brown</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star-empty" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
+          </svg></li>
+          <li><svg class="star-empty" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
+          </svg></li>
+        </ul>
         <p class="quote">
           "The atmosphere is perfect for working or relaxing with friends. Their
           Wi-Fi is fast too!"
@@ -628,23 +644,23 @@
         <p class="visitor-name">Sarah Wilson</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star-empty" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
+          </svg></li>
+        </ul>
         <p class="quote">
           "I'm addicted to their seasonal flavors! Each one is crafted with such
           care and creativity."
@@ -652,23 +668,24 @@
         <p class="visitor-name">Chris Lee</p>
       </li>
       <li class="testimonials-item">
-        <div class="rating">
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
+        <ul class="rating">
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
+          <li><svg class="star" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-filled"></use>
+          </svg></li>
           </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
+          <svg class="star-empty" width="20" height="19">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#star-outline"></use>
           </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-          <svg class="star" width="20" height="19">
-            <use href="/src/img/testimonials/icons.svg#star-icon"></use>
-          </svg>
-        </div>
+        </ul>
         <p class="quote">
           "I appreciate how they source their coffee beans sustainably. It's
           great to support such an ethical business!"
@@ -765,14 +782,13 @@
     <footer class="footer">
   <section class="footer-container container">
     <!-- Footer: Logo + Socials -->
-    <ul class="footer-header">
-      <li class="footer-logo-item">
+    <div class="footer-header">
         <a class="footer-logo-link" href="./index.html">
-          <svg class="footer-logo-icon" width="146" height="84">
-            <use href="/gitbugs/assets/icon-njwITUOC.svg#footer_logo"></use>
+          <svg class="footer-logo-icon logo" width="146" height="84">
+            <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#logo-mob-menu"></use>
           </svg>
         </a>
-      </li>
+      
       <li class="footer-socials-item">
         <ul class="social-list">
           <li class="social-item">
@@ -813,15 +829,19 @@
           </li>
         </ul>
       </li>
-    </ul>
+    </div>
 
     <!-- Footer Menu -->
-    <ul class="footer-menu">
-      <li class="footer-list-item"><a href="#about_us">About us</a></li>
-      <li class="footer-list-item"><a href="#benefits">Benefits</a></li>
-      <li class="footer-list-item"><a href="#gallery">Gallery</a></li>
-      <li class="footer-list-item"><a href="#testimonial">Testimonial</a></li>
-      <li class="footer-list-item"><a href="#location">Location</a></li>
+     <nav class="footer-navigation" aria-label="Footer Menu">
+       <ul class="footer-menu">
+         <li class="footer-list-item"><a href="#about_us">About us</a></li>
+         <li class="footer-list-item"><a href="#benefits">Benefits</a></li>
+         <li class="footer-list-item"><a href="#gallery">Gallery</a></li>
+         <li class="footer-list-item"><a href="#testimonial">Testimonial</a></li>
+         <li class="footer-list-item"><a href="#location">Location</a></li>
+       </ul>
+     </nav>
+      
     </ul>
   </section>
   <!-- Footer Paragraph -->
@@ -830,24 +850,20 @@
 
 
     <!-- Mobile Menu -->
-<div class="mobile-menu-window container">
+<div class="mobile-menu-window">
   <div class="mobile-menu-container">
-    <ul class="mobile-menu-header">
-      <li class="mobile-close-item">
-        <button class="mobile-close-btn" type="button" aria-label="Close menu">
-          <svg class="mobile-close-icon" width="24" height="24">
-            <use href="/gitbugs/assets/sprite-ChsZLUaM.svg#close-mob-btn"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="mobile-logo-item">
-        <a class="mobile-logo-link" href="./index.html">
-          <svg class="mobile-logo-icon" width="84" height="36">
-            <use href="/gitbugs/assets/sprite-ChsZLUaM.svg#logo-mob-menu"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="mobile-menu-header">
+      <a class="mobile-logo-link" href="./index.html">
+        <svg class="mobile-logo-icon" width="84" height="36">
+          <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#logo-mob-menu"></use>
+        </svg>
+      </a>
+      <button class="mobile-close-btn" type="button" aria-label="Close menu">
+        <svg class="mobile-close-icon" width="24" height="24">
+          <use href="/gitbugs/assets/sprite-DYz5Q6IC.svg#close-mob-btn"></use>
+        </svg>
+      </button>
+    </div>
     <nav class="mob-menu-nav">
       <ul class="mobile-menu-list">
         <li class="mob-menu-item"><a href="#about_us">About us</a></li>
