@@ -1,7 +1,8 @@
 /* Mobile */
 .container {
   width: 100%;
-  max-width: 320px;
+
+  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
   box-sizing: border-box;

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  padding: 18px 16px;
 }
 
 /* Logo */
@@ -51,7 +51,7 @@
   }
 
   .header-container {
-    padding: 0 64px;
+    padding: 18px 64px;
   }
 
   .header-menu {
@@ -63,6 +63,6 @@
 /* DESKTOP (≥1440px) */
 @media screen and (min-width: 1440px) {
   .header-container {
-    padding: 0 64px;
+    padding: 18px 64px;
   }
 }

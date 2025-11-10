@@ -22,7 +22,9 @@
   gap: 40px;
   width: 100%;
 }
-
+.footer-socials-item {
+  list-style: none;
+}
 .footer-logo-link {
   display: inline-block;
 }

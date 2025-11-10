@@ -18,6 +18,11 @@
   letter-spacing: -0.01em;
   color: var(--color-scheme-1-text);
 }
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 @media only screen and (min-width: 768px) {
   .welcome-title {
     max-width: 336px;
@@ -67,22 +72,21 @@
     inset 0 2px 1px rgba(255, 255, 255, 0.25),
     inset 0 32px 24px rgba(255, 255, 255, 0.05);
 }
-@media only screen and (min-width: 1440px) {
-  .btn-find-location:hover,
-  .btn-find-location:focus {
-    background-color: rgba(11, 8, 3, 0.1);
-    color: var(--color-neutral-darkest);
-  }
 
-  .btn-find-location:hover .btn-welcome-icon,
-  .btn-find-location:focus .btn-welcome-icon {
-    fill: var(--color-neutral-darkest);
-  }
+.btn-find-location:hover,
+.btn-find-location:focus {
+  background-color: rgba(11, 8, 3, 0.1);
+  color: var(--color-neutral-darkest);
+}
+
+.btn-find-location:hover .btn-welcome-icon,
+.btn-find-location:focus .btn-welcome-icon {
+  fill: var(--color-neutral-darkest);
 }
 
 @media only screen and (min-width: 768px) {
   .btn-find-location {
-    width: auto;
+    width: 181px;
     height: 44px;
     align-self: flex-start;
   }
@@ -116,7 +120,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 32px;
 }
 @media only screen and (min-width: 1440px) {
   .welcome-col-right {
@@ -124,8 +127,11 @@
   }
 }
 
-.welcome-image img {
+.welcome-img {
   width: 100%;
   height: auto;
   border-radius: 40px;
+}
+.welcome-image {
+  flex-shrink: 0; /* не сжимать картинку */
 }

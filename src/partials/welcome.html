@@ -1,6 +1,6 @@
 <!---Welcome-->
-<section class="section-welcome">
-  <div class="container">
+<section class="section-welcome" id="benefits">
+  <div class="welcome-container container">
     <!-- ряд з текстом -->
     <div class="welcome-row">
       <div class="welcome-col-left">
@@ -16,10 +16,10 @@
           roasting them to perfection, ensuring each sip is a delight.
         </p>
 
-        <button class="btn-find-location" type="button">
-          <span>Find location</span>
-          <svg class="btn-welcome-icon" width="24" height="24">
-            <use href="/img/welcome/icons.svg#icon-map-pin"></use>
+        <button class="btn-find-location btn" type="button">
+          <a href="#location" class="button-link">Find location</a>
+          <svg class="btn-welcome-icon btn-icon" width="24" height="24">
+            <use href="/img/svg/sprite.svg#icon-map-pin"></use>
           </svg>
         </button>
       </div>
@@ -28,6 +28,13 @@
     <!-- картинка нижче на всю ширину -->
     <div class="welcome-image">
       <picture>
+        <source
+          media="(min-width:1440px)"
+          srcset="
+            ./img/welcome/welcome_desk_1x.jpg   1x,
+            ./img/welcome/welcome_desk@2x-2.jpg 2x
+          "
+        />
         <source
           media="(max-width:767px)"
           srcset="
@@ -42,15 +49,9 @@
             ./img/welcome/welcome_tab@2x-2.jpg 2x
           "
         />
-        <source
-          media="(min-width:1440px)"
-          srcset="
-            ./img/welcome/welcome_desk_1x.jpg   1x,
-            ./img/welcome/welcome_desk@2x-2.jpg 2x
-          "
-        />
+
         <img
-          class="welcome-image"
+          class="welcome-img"
           src="./img/welcome/welcome_mob_1x.jpg"
           alt="Barista pouring coffee"
           width="288"
